@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/spark-development/onebe-project#readme",
   "dependencies": {
-    "@sparkdev/onebe": "file:../framework",
+    "@sparkdev/onebe": "git@github.com:spark-development/onebe.git",
     "joi": "^17.4.2"
   },
   "devDependencies": {

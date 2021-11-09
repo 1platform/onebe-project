@@ -1,5 +1,5 @@
-import Env from "@sparkdev/onebe/src/System/Env";
-import IConfig from "@sparkdev/onebe/src/System/IConfig";
+import Env from "@sparkdev/onebe/dist/System/Env";
+import IConfig from "@sparkdev/onebe/dist/System/IConfig";
 
 const defaultLangConfig: IConfig = {
   defaultLang: Env.string("DEFAULT_LANG", "en"),
