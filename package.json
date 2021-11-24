@@ -1,6 +1,7 @@
 {
   "name": "@sparkdev/onebe-sample",
   "packageManager": "yarn@3.0.1",
+  "private": true,
   "description": "The base project from which other projects should be created.",
   "version": "1.0.0",
   "main": "dist/index.js",
@@ -34,8 +35,8 @@
   },
   "homepage": "https://github.com/spark-development/onebe-project#readme",
   "dependencies": {
-    "@sparkdev/onebe": "git@github.com:spark-development/onebe.git",
-    "joi": "^17.4.2"
+    "joi": "^17.4.2",
+    "onebe": "^1.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",

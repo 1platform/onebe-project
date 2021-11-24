@@ -16,6 +16,11 @@ const defaultDBConfig: IConfig = {
   },
 
   entities: [ Env.string("DATABASE_ENTITIES", "./src/models/**/*.ts") ],
+  migrations: {
+    table: Env.string("DATABASE_MIGRATIONS_TABLE", "_migrations"),
+    files: [ Env.string("DATABASE_MIGRATIONS", "./src/migrations/**/*.ts") ],
+    dir: Env.string("DATABASE_MIGRATIONS_FOLDER", "./src/migrations/")
+  }
 };
 
 export default defaultDBConfig;
