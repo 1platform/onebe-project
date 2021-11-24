@@ -3,8 +3,8 @@
  */
 import onebe from "@sparkdev/onebe/dist";
 
-import "@sparkdev/onebe/dist/custom";
-import DefaultLogger from "@sparkdev/onebe/dist/System/Logger";
+import "onebe/custom";
+import DefaultLogger from "onebe/System/Logger";
 import jobs from "./jobs";
 import observers from "./observers";
 import services from "./services";

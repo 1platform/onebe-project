@@ -1,6 +1,6 @@
-import Env from "@sparkdev/onebe/dist/System/Env";
-import IConfig from "@sparkdev/onebe/dist/System/IConfig";
-import LogLevel from "@sparkdev/onebe/dist/System/LogLevel";
+import Env from "onebe/System/Env";
+import IConfig from "onebe/System/IConfig";
+import LogLevel from "onebe/System/LogLevel";
 
 const defaultLogsConfig: IConfig = {
   level: Env.string("LOG_LEVEL", LogLevel.INFO),

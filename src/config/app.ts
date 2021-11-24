@@ -1,6 +1,6 @@
-import getVersion from "@sparkdev/onebe/dist/version";
-import Env from "@sparkdev/onebe/dist/System/Env";
-import IConfig from "@sparkdev/onebe/dist/System/IConfig";
+import getVersion from "onebe/version";
+import Env from "onebe/System/Env";
+import IConfig from "onebe/System/IConfig";
 
 const defaultAppConfig: IConfig = {
   debug: Env.flag("APP_DEBUG"),

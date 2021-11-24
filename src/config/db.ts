@@ -1,5 +1,5 @@
-import Env from "@sparkdev/onebe/dist/System/Env";
-import IConfig from "@sparkdev/onebe/dist/System/IConfig";
+import Env from "onebe/System/Env";
+import IConfig from "onebe/System/IConfig";
 
 const defaultDBConfig: IConfig = {
   engine: Env.string("DATABASE_ENGINE", "mongodb"),

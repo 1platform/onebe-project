@@ -1,4 +1,4 @@
-import IConfig from "@sparkdev/onebe/dist/System/IConfig";
+import IConfig from "onebe/System/IConfig";
 import api from "./api";
 import app from "./app";
 import auth from "./auth";

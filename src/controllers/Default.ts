@@ -1,19 +1,19 @@
-import app from "@sparkdev/onebe/dist/App";
-import { method } from "@sparkdev/onebe/dist/Docs/DocsDecorators";
-import { TRoutesList } from "@sparkdev/onebe/dist/Docs/DocsInterfaces";
-import DocsStore from "@sparkdev/onebe/dist/Docs/DocsStore";
-import SwaggerUI from "@sparkdev/onebe/dist/Docs/SwaggerUI";
-import HTTPStatus from "@sparkdev/onebe/dist/HTTP/HTTPStatus";
-import Route from "@sparkdev/onebe/dist/Router/Route";
-import { path } from "@sparkdev/onebe/dist/Router/RouteDecorators";
+import app from "onebe/App";
+import { method } from "onebe/Docs/DocsDecorators";
+import { TRoutesList } from "onebe/Docs/DocsInterfaces";
+import DocsStore from "onebe/Docs/DocsStore";
+import SwaggerUI from "onebe/Docs/SwaggerUI";
+import HTTPStatus from "onebe/HTTP/HTTPStatus";
+import Route from "onebe/Router/Route";
+import { path } from "onebe/Router/RouteDecorators";
 import {
   IAuthContext,
   IContext,
-} from "@sparkdev/onebe/dist/Router/RouteInterfaces";
-import { GET } from "@sparkdev/onebe/dist/Router/VerbsDecorators";
-import Config from "@sparkdev/onebe/dist/System/Config";
-import IConfig from "@sparkdev/onebe/dist/System/IConfig";
-import DefaultLogger from "@sparkdev/onebe/dist/System/Logger";
+} from "onebe/Router/RouteInterfaces";
+import { GET } from "onebe/Router/VerbsDecorators";
+import Config from "onebe/System/Config";
+import IConfig from "onebe/System/IConfig";
+import DefaultLogger from "onebe/System/Logger";
 
 @path("/", "Root", "Main Entrypoint of the application")
 export default class Default extends Route {

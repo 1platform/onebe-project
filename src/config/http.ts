@@ -1,5 +1,5 @@
-import Env from "@sparkdev/onebe/dist/System/Env";
-import IConfig from "@sparkdev/onebe/dist/System/IConfig";
+import Env from "onebe/System/Env";
+import IConfig from "onebe/System/IConfig";
 
 const defaultHTTPConfig: IConfig = {
   listen: Env.string("HTTP_LISTEN", "127.0.0.1"),
