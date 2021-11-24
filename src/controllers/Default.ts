@@ -6,10 +6,7 @@ import SwaggerUI from "onebe/Docs/SwaggerUI";
 import HTTPStatus from "onebe/HTTP/HTTPStatus";
 import Route from "onebe/Router/Route";
 import { path } from "onebe/Router/RouteDecorators";
-import {
-  IAuthContext,
-  IContext,
-} from "onebe/Router/RouteInterfaces";
+import { IAuthContext, IContext } from "onebe/Router/RouteInterfaces";
 import { GET } from "onebe/Router/VerbsDecorators";
 import Config from "onebe/System/Config";
 import IConfig from "onebe/System/IConfig";

@@ -1,7 +1,7 @@
 /**
  * Backend Bootstrap
  */
-import onebe from "@sparkdev/onebe/dist";
+import onebe from "onebe";
 
 import "onebe/custom";
 import DefaultLogger from "onebe/System/Logger";
