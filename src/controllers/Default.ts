@@ -22,6 +22,7 @@ export default class Default extends Route {
       SwaggerUI.setup(null, {
         swaggerOptions: {
           url: `${ Config.get("api.path") }/swagger.yaml`,
+          persistAuthorization: true
         },
         customSiteTitle: `${ app.app.appName } API`,
         isExplorer: true,
@@ -32,7 +33,7 @@ export default class Default extends Route {
   @GET<any, HTTPStatus>("/", true)
   @method.responseStatus(HTTPStatus.OK)
   public getSample(context: IContext, authContext: IAuthContext): HTTPStatus {
-    DefaultLogger.debug(context.req.pageURL);
+    DefaultLogger.debug(context.request.pageURL);
     DefaultLogger.debug([ context.body, context.params ]);
     return HTTPStatus.OK;
   }
