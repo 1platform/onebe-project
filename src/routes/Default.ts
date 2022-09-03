@@ -7,7 +7,10 @@ import { getDefaultLogger } from "onebe/System/Logger";
 export default class Default extends Route {
   @GET<any, HTTPStatus>("/", true)
   @ResponseDocs.Status(HTTPStatus.OK)
-  public async getSample(context: ContextAPI, authContext: AuthContextAPI): Promise<HTTPStatus> {
+  public async getSample(
+    context: ContextAPI,
+    authContext: AuthContextAPI
+  ): Promise<HTTPStatus> {
     getDefaultLogger().debug(context.pageURL);
     getDefaultLogger().debug([ context.body, context.parameters ]);
     return HTTPStatus.OK;

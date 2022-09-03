@@ -136,6 +136,8 @@ web_modules/
 .env
 .env.test
 .env.production
+.env.prod
+.env.dev
 .env.local
 .env.*.local
 

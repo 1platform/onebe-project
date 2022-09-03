@@ -62,7 +62,7 @@ const defaultAppConfig: IConfig = {
      * @default "./src/services"
      */
     services: "./src/services",
-  }
+  },
 };
 
 export default defaultAppConfig;

@@ -34,7 +34,13 @@ const defaultHTTPConfig: IConfig = {
    *
    * @default "http://HTTP_LISTEN:HTTP_PORT"
    */
-  url: Env.url("HTTP_URL", `http://${ Env.string("HTTP_LISTEN", "127.0.0.1") }:${ Env.int("HTTP_PORT", 7200) }`),
+  url: Env.url(
+    "HTTP_URL",
+    `http://${ Env.string("HTTP_LISTEN", "127.0.0.1") }:${ Env.int(
+      "HTTP_PORT",
+      7200
+    ) }`
+  ),
 
   /**
    * The format used to display the log information for HTTP requests.

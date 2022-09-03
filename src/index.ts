@@ -4,7 +4,11 @@
 import "onebe/custom";
 
 import onebe from "onebe";
-import type { IInitStrategyOptions, IPayload, IUser } from "onebe/Authentication";
+import type {
+  IInitStrategyOptions,
+  IPayload,
+  IUser,
+} from "onebe/Authentication";
 import { getDefaultLogger } from "onebe/System/Logger";
 
 import jobs from "./jobs";
@@ -67,7 +71,10 @@ onebe({
      */
     return start({
       serializeUser: (user: IUser) => ({ userId: user.id }),
-      deserializeUser: (payload: IPayload, done: (err: any, user?: IUser) => void) => ({ id: payload.id }),
+      deserializeUser: (
+        payload: IPayload,
+        done: (err: any, user?: IUser) => void
+      ) => ({ id: payload.id }),
     });
   })
   .catch((err) => {

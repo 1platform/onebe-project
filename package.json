@@ -18,9 +18,10 @@
     "app:compile:cleanup": "rm -rf ./dist",
     "app:compile:check": "tsc",
     "app:build": "yarn code:lint && yarn app:compile && yarn app:compile:check",
-    "lang:i18n": "sync-i18n --files 'src/locales/*.json' --primary en --languages ro --space 2",
-    "lang:i18n:check": "yarn i18n --check",
-    "onebe": "onebe"
+    "lang:i18n": "sync-i18n --files 'src/locales/*.json' --primary en --languages en --space 2",
+    "lang:i18n:check": "yarn lang:i18n --check",
+    "onebe": "onebe",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -69,7 +70,7 @@
     "debug": "^4.3.4",
     "eslint": "^8.13.0",
     "eslint-plugin-import": "^2.26.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "i18next-json-sync": "^2.3.1",
     "nodemon": "^2.0.19",
     "prettier": "^2.7.1",
