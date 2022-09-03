@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "module": "ES2020",
+    "module": "ESNext",
     "esModuleInterop": true,
     "moduleResolution": "node",
+    "strict": false,
     "sourceMap": true,
     "target": "ES2021",
     "outDir": "./dist",
@@ -16,7 +17,10 @@
     "emitDecoratorMetadata": true,
     "declaration": true,
     "emitDeclarationOnly": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "paths": {
+      "@/*": ["*"]
+    }
   },
   "include": [
     "src/**/*.ts",

@@ -1,4 +1,4 @@
-import IConfig from "onebe/System/IConfig";
+import type IConfig from "onebe/System/IConfig";
 import api from "./api";
 import app from "./app";
 import auth from "./auth";
@@ -11,6 +11,10 @@ import logs from "./logs";
 import sms from "./sms";
 import upload from "./upload";
 
+/**
+ * The configuration object, with some default values, that can be used
+ * in the application for configuring the behaviour of the application.
+ */
 const defaultConfig: IConfig = {
   api,
   app,
