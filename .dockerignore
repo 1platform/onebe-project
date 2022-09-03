@@ -1,10 +1,8 @@
 upload
 node_modules
 .idea
+.vscode
 .env
 .dockerignore
 .gitignore
-.gitlab-ci.yml
 Dockerfile
-Dockerfile.dev
-Dockerfile.staging
