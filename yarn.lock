@@ -195,7 +195,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/cli@npm:^7.17.6":
+"@babel/cli@npm:^7.17.6, @babel/cli@npm:^7.18.10":
   version: 7.18.10
   resolution: "@babel/cli@npm:7.18.10::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40babel%2Fcli%2F-%2Fcli-7.18.10.tgz"
   dependencies:
@@ -247,7 +247,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.17.9":
+"@babel/core@npm:^7.17.9, @babel/core@npm:^7.18.10":
   version: 7.18.13
   resolution: "@babel/core@npm:7.18.13::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40babel%2Fcore%2F-%2Fcore-7.18.13.tgz"
   dependencies:
@@ -648,7 +648,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/node@npm:^7.16.8":
+"@babel/node@npm:^7.16.8, @babel/node@npm:^7.18.10":
   version: 7.18.10
   resolution: "@babel/node@npm:7.18.10::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40babel%2Fnode%2F-%2Fnode-7.18.10.tgz"
   dependencies:
@@ -747,7 +747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-decorators@npm:^7.17.9":
+"@babel/plugin-proposal-decorators@npm:^7.17.9, @babel/plugin-proposal-decorators@npm:^7.18.10":
   version: 7.18.10
   resolution: "@babel/plugin-proposal-decorators@npm:7.18.10::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40babel%2Fplugin-proposal-decorators%2F-%2Fplugin-proposal-decorators-7.18.10.tgz"
   dependencies:
@@ -1516,7 +1516,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.16.11":
+"@babel/preset-env@npm:^7.16.11, @babel/preset-env@npm:^7.18.10":
   version: 7.18.10
   resolution: "@babel/preset-env@npm:7.18.10::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40babel%2Fpreset-env%2F-%2Fpreset-env-7.18.10.tgz"
   dependencies:
@@ -1616,7 +1616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.16.7":
+"@babel/preset-typescript@npm:^7.16.7, @babel/preset-typescript@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/preset-typescript@npm:7.18.6::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40babel%2Fpreset-typescript%2F-%2Fpreset-typescript-7.18.6.tgz"
   dependencies:
@@ -6623,11 +6623,23 @@ fsevents@~2.3.2:
   languageName: unknown
   linkType: soft
 
-"onebe@portal:/Users/valentin/Workspace/spark/onebe/framework/dist::locator=onebe-sample%40workspace%3A.":
-  version: 0.0.0-use.local
-  resolution: "onebe@portal:/Users/valentin/Workspace/spark/onebe/framework/dist::locator=onebe-sample%40workspace%3A."
+"onebe@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "onebe@npm:2.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fonebe%2F-%2Fonebe-2.0.1.tgz"
   dependencies:
+    "@babel/cli": ^7.18.10
+    "@babel/core": ^7.18.10
+    "@babel/node": ^7.18.10
+    "@babel/plugin-proposal-class-properties": ^7.18.6
+    "@babel/plugin-proposal-decorators": ^7.18.10
+    "@babel/plugin-proposal-object-rest-spread": ^7.18.9
+    "@babel/preset-env": ^7.18.10
+    "@babel/preset-typescript": ^7.18.6
+    "@babel/register": ^7.18.9
     "@vonage/server-sdk": ^2.11.2
+    babel-eslint: ^10.1.0
+    babel-plugin-file-loader: ^2.0.0
+    babel-plugin-transform-require-ignore: ^0.1.1
     bcryptjs: ^2.4.3
     body-parser: ^1.20.0
     chalk: ^4.1.2
@@ -6677,8 +6689,9 @@ fsevents@~2.3.2:
     yargs: ^17.5.1
   bin:
     onebe: ./cli.js
+  checksum: 742b3e28b51cc383cbb51a8cef1295bd3cb4430d10feca6c710727baae4d6086144e76b9f52d974942c3818c99bade119dccb898c190ddb0cbd6e316a34d737c
   languageName: node
-  linkType: soft
+  linkType: hard
 
 "onetime@npm:^5.1.0":
   version: 5.1.2
