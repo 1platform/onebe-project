@@ -1,6 +1,6 @@
-import ServiceLoader from "onebe/Services/ServiceLoader";
-import EmailService from "onebe/Email/EmailService";
-import SMSService from "onebe/SMS/SMSService";
+import { ServiceLoader } from "onebe/Services";
+import { EmailService } from "onebe/Email";
+import { SMSService } from "onebe/SMS";
 
 export default function services(): void {
   ServiceLoader.set<EmailService>(new EmailService());

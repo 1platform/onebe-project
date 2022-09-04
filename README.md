@@ -11,7 +11,6 @@ You can check the code documentation of the [framework here](https://github.com/
 The project has the following structure:
 
 - `.husky` - Git Hooks that can be used at different stages of the git process.
-- `.yarn` - Stores files needed by yarn to work.
 - `src` - The sources of your application
 - `tmp` - Storage folder for temporary files.
 - `upload` - Storage folder for uploaded files.
@@ -19,7 +18,7 @@ The project has the following structure:
   it accordingly to your needs.
 - `.env.docker.sample` - A sample environment file for the docker image. Before building your docker project make a
   copy of this file and edit it accordingly to your needs.
-- `.babelrc.json`, `.eslintrc`, `.yarnrc.yml`, `nodemon.json`, `tsconfig.json` - Configuration files for various
+- `.babelrc.json`, `.eslintrc`, `nodemon.json`, `tsconfig.json` - Configuration files for various
   tools used in the project creation and building.
 - `.gitignore`, `.dockerignore`, `.nodeignore` - Files used to define what to be ignored by various tools.
 - `Dockerfile` - File used to build a docker image of the project.
